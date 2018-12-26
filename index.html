@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Book List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">
+        <i class="fas fa-book-open"></i>My <span class="teal-text">Book</span>List
+      </h1>
+
+      <form class="" id="book-form">
+        <div class="row removeMargin">
+          <div class="input-field col s12 m12 l12">
+            <label for="title">Title</label>
+            <input id="title" type="text" name="title"/>
+          </div>
+        </div>
+        <div class="row removeMargin">
+          <div class="input-field col s12 m12 l12">
+            <label for="author">Author</label>
+            <input id="author" type="text" name="author"/>
+          </div>
+        </div>
+        <div class="row removeMargin">
+          <div class="input-field col s12 m12 l12">
+            <label for="isbn">ISBN</label>
+            <input id="isbn" type="text" name="isbn"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l12">
+            <input type="submit" name="submit" class="btn col s12 m12 l12" value="Add Book"/>
+          </div>
+        </div>
+      </form>
+
+      <table class="highlight centered responsive-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Option</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
